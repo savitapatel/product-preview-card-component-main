@@ -1,0 +1,74 @@
+body{ 
+   background-color: hsl(30, 38%, 92%);
+   font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.bg-image{
+    height: 400px; 
+    background-position: center; 
+}
+
+.right{
+    background-color: white;
+    padding: 10px;
+}
+
+.description{
+    font-size: 12px;
+    color: grey;
+}
+.text-perfume{
+    letter-spacing: 5px;
+    font-weight: lighter;
+    color: grey;
+    text-transform: uppercase;
+}
+.prices{
+    margin-top: 20px;
+}
+.sale-price{
+    color: olivedrab;
+    font-size: 20px;
+    font-weight: bold;
+}
+.list-price{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 10px;
+}
+.btn{
+    margin-top: 20px;
+    background-color: olivedrab;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.btn i{margin-right: 5px; }
+
+/* media queries */
+
+@media screen and (max-device-width:600px),screen and (max-width:600px) {
+    .container{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 500px;
+    }
+}
